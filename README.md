@@ -26,7 +26,7 @@
     "mock-interviewer": {
       "source": {
         "source": "github",
-        "repo": "你的用户名/mock-interviewer"
+        "repo": "crowscc/mock-interviewer"
       }
     }
   }
@@ -39,7 +39,7 @@
 
 ```bash
 # 克隆到任意项目的 .claude/skills/ 目录
-git clone https://github.com/你的用户名/mock-interviewer.git
+git clone https://github.com/crowscc/mock-interviewer.git
 cp -r mock-interviewer/mock-interviewer .claude/skills/mock-interviewer
 ```
 
@@ -48,7 +48,7 @@ cp -r mock-interviewer/mock-interviewer .claude/skills/mock-interviewer
 **方式一：克隆到 managed skills 目录**
 
 ```bash
-git clone https://github.com/你的用户名/mock-interviewer.git /tmp/mock-interviewer
+git clone https://github.com/crowscc/mock-interviewer.git /tmp/mock-interviewer
 cp -r /tmp/mock-interviewer/mock-interviewer ~/.openclaw/skills/mock-interviewer
 ```
 
@@ -56,7 +56,7 @@ cp -r /tmp/mock-interviewer/mock-interviewer ~/.openclaw/skills/mock-interviewer
 
 ```bash
 # 克隆仓库
-git clone https://github.com/你的用户名/mock-interviewer.git ~/skills/mock-interviewer
+git clone https://github.com/crowscc/mock-interviewer.git ~/skills/mock-interviewer
 
 # 编辑 ~/.openclaw/openclaw.json，添加到 skills.load.extraDirs
 ```
