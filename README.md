@@ -14,61 +14,46 @@
 
 ## 快速安装
 
-### Claude Code
-
-**方式一：通过 Marketplace 配置（推荐）**
-
-编辑 `~/.claude/settings.json`，添加：
-
-```json
-{
-  "extraKnownMarketplaces": {
-    "mock-interviewer": {
-      "source": {
-        "source": "github",
-        "repo": "crowscc/mock-interviewer"
-      }
-    }
-  }
-}
-```
-
-重启 Claude Code 后即可使用。
-
-**方式二：手动安装**
+一行命令安装，兼容所有支持 [Agent Skills 开放标准](https://agentskills.io/) 的平台：
 
 ```bash
-# 克隆到任意项目的 .claude/skills/ 目录
-git clone https://github.com/crowscc/mock-interviewer.git
-cp -r mock-interviewer/mock-interviewer .claude/skills/mock-interviewer
+npx skills add crowscc/mock-interviewer
+```
+
+### Claude Code
+
+```bash
+# 自动安装到当前项目
+npx skills add crowscc/mock-interviewer -a claude-code
+
+# 或全局安装
+npx skills add crowscc/mock-interviewer -a claude-code -g
 ```
 
 ### OpenClaw
 
-**方式一：克隆到 managed skills 目录**
-
 ```bash
-git clone https://github.com/crowscc/mock-interviewer.git /tmp/mock-interviewer
-cp -r /tmp/mock-interviewer/mock-interviewer ~/.openclaw/skills/mock-interviewer
+# 安装到 managed skills 目录
+npx skills add crowscc/mock-interviewer -a openclaw
 ```
 
-**方式二：通过 extraDirs 配置**
+或手动安装：
 
 ```bash
-# 克隆仓库
-git clone https://github.com/crowscc/mock-interviewer.git ~/skills/mock-interviewer
-
-# 编辑 ~/.openclaw/openclaw.json，添加到 skills.load.extraDirs
+git clone https://github.com/crowscc/mock-interviewer.git /tmp/mi
+cp -r /tmp/mi/mock-interviewer ~/.openclaw/skills/mock-interviewer
 ```
 
-```json
-{
-  "skills": {
-    "load": {
-      "extraDirs": ["~/skills/mock-interviewer"]
-    }
-  }
-}
+### Cursor / 其他 Agent
+
+```bash
+npx skills add crowscc/mock-interviewer -a cursor
+```
+
+查看所有可安装的技能：
+
+```bash
+npx skills add crowscc/mock-interviewer --list
 ```
 
 ## 使用方式
