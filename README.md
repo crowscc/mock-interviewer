@@ -4,6 +4,12 @@
 
 兼容 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 和 [OpenClaw](https://docs.openclaw.ai)。
 
+<p align="center">
+  <video src="https://github.com/crowscc/mock-interviewer/raw/main/demo.mp4" width="720" autoplay loop muted playsinline>
+    Your browser does not support the video tag.
+  </video>
+</p>
+
 ## 核心能力
 
 - **6 种面试官角色** — P7 同级工程师、P8 Tech Lead、P9 架构师、P8 业务负责人、P9 总监、VP/CTO
