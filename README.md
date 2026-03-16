@@ -5,9 +5,7 @@
 兼容 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 和 [OpenClaw](https://docs.openclaw.ai)。
 
 <p align="center">
-  <video src="https://github.com/crowscc/mock-interviewer/raw/main/demo.mp4" width="720" autoplay loop muted playsinline>
-    Your browser does not support the video tag.
-  </video>
+  <img src="./demo.gif" alt="Demo" width="720" />
 </p>
 
 ## 核心能力
